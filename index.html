@@ -1,128 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-       .navbar{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 30px;
-            position: sticky;
-       }
-       .logo-parent{
-            width: 10%;
-       }
-       .navbar-links{
-        width: 70%;
-        display: flex;
-        justify-content: space-evenly;
-       }
-       .navbar-links a{
-            color: rgb(106, 106, 114);
-            text-decoration: none;
-            font-size: 1.3rem;
-            font-weight: bold;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       }
-       .navbar-links a:hover{
-            color: rgb(136, 136, 144);
-            text-decoration: none;
-            font-size: 1.6rem;
-       }
-       .lets-talk{
-        background-color: black;
-        color: white;
-        padding: 10px;
-        width: 8%;
-        text-decoration: none;
-        text-align: center;
-        border-radius: 25px;
-       }
-       .lets-talk:hover{
-        background-color: white;
-        color: black;
-        border: 1px solid black;
-       }
-       .web-developer-container{
-        font-family: sans-serif;
-        background-color: #00ffff22;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding:2% 5%;
-       }
-       .web-developer{
-        width: 40%;
-       }
-       .web-developer h1{
-        font-size: 2.3rem;
-       }
-       .web-developer p{
-        text-align: justify;
-       }
-       .my-profile{
-        width: 40%;
-       }
-       .web-developer-links a{
-        background-color:cadetblue;
-        color: white;
-        padding: 10px 15px;
-        text-decoration: none;
-        border-radius: 25px; 
-        margin:0px 10px ;
-       }
-       .web-developer-links a:hover{
-        background-color: black;
-        color: white;
-       }
-       .aboutme{
-        display: flex;
-       }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="" class="logo-parent">
-            <img src="image.png" width="50px" height="50px" alt="">
-        </a>
-        <div class="navbar-links">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Services</a>
-            <a href="">Skill</a>
-            <a href="">Work</a>
-            <a href="">Pricing</a>
-            <a href="">Testimonial</a>
-        </div>
-        <a href="" class="lets-talk">Lets Talk</a>
-    </nav>
-
-    <div class="web-developer-container">
-        <div class="web-developer">
-            <h1>Hey! I am a web developer</h1>
-            <p>adipisicing elit. Itaque, totam magnam est eligendi vitr adipisicing elit. Itaque, totam magnam est eligendi vitr adipisicing elit. Itaque, totam magnam est eligendi vitr adipisicing elit. Itaque, totam magnam est eligendi vitr adipisicing elit. Itaque, totanam est eligendi vit</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, totam magnam est eligendi vitae illo ex, commodi adr adipisicing elit. Itaque, totam magnam est eligendi vitr adipisicing elit. Itaque, totam magnam est eligendi vitr adipisicing elit. Itaque, totam magnam est eligendi vitr adipisicing elit. Itaque, totam magnam est eligendi vit</p>
-            <div class="web-developer-links">
-                <a href="">LEARN MORE</a>
-                <a href="">HIRE ME</a>
+    <nav class="navbar navbar-expand-md bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://avatars.githubusercontent.com/u/111624137?s=280&v=4" width="50" height="50" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./register.html">Register</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
-        <img class="my-profile" src="https://live.designtocodes.com/OnePage/NextGenAppsPro/assets/images/Hero_right_img.png" alt="">
-    </div>
-    <div class="aboutme">
-        <img src="https://live.designtocodes.com/OnePage/NextGenAppsPro/assets/images/about_left_img.png" alt="">
-        <div class="about_para">
-            <h4>About me</h4>
-            <h2>I am a pasonite web developer</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, magni. Quo, natus! Consequuntur, asperiores aperiam veniam rem quis quisquam officiis rerum dolorem nemo iusto molestias voluptatum dicta fuga nam quidem!</p>
+    </nav>
 
+    <div class="container mt-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://pics.clipartpng.com/Black_BMW_M5_2013_Car_PNG_Clipart-101.png" class="card-img-top" alt="...">
+                    <div class="card-body mt-5">
+                        <h5 class="card-title">BMW</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://pngimg.com/d/porsche_PNG102862.png" class="card-img-top" alt="...">
+                    <div class="card-body mt-5">
+                        <h5 class="card-title">Porch</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://imgk.timesnownews.com/story/Raider_lead_hq.png?tr=w-1200,h-900" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lamborghini</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8LYKfPlzcSL-gwE_4_osvDKmOpkcC2qLNeg&s" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ferrari</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</body>
-</html>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
